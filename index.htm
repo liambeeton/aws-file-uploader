@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>AWS Uploader</title>
+	<meta name="description" content="AWS Uploader">
+	<meta name="author" content="Liam Beeton">
+
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
+
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.0.min.js"></script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="upload-options">
+		<ul>
+			<li>
+				<label>File:</label>
+				<input type="file" id="file-chooser" />
+			</li>
+			<li>
+				<label>Endpoint:</label>
+				<select id="endpoint">
+					<option value"0" selected>S3</option>
+					<option value="1">CloudFront</option>
+				</select>
+			</li>
+			<li>
+				<label>Bucket:</label>
+				<select id="bucket">
+					<option value"0">bucket-1</option>
+					<option value="1">bucket-2</option>
+				</select>
+			</li>
+			<li>
+				<label>Upload Type:</label>
+				<select id="upload-type">
+					<option>Single</option>
+					<option>Multipart</option>
+				</select>
+			</li>
+			<li><button id="upload-button">Upload to Cloud Front</button></li>
+		</ul>
+	</div>
+
+	<script src="js/uploader.js"></script>
+</body>
+</html>

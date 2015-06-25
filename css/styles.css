@@ -1,0 +1,17 @@
+ul {
+	list-style: none;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+label {
+	font-family: verdana;
+}
+
+#upload-options {
+	border: 1px solid #ccc;
+	background: #f3f3f3;
+	padding: 20px;
+}
